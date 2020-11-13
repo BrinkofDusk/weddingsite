@@ -31,9 +31,11 @@
 <div class="bgimg"></div>
 <div class="centratxt">
     
-    <form action="rsvp.php" method="submit" >
-<input type="select">
-<select name="selectName" id="selectName" placeholder="Select Name">
+    <form action="rsvp.php" method="submit" id="rsvpForm" >
+<input type="checkbox"><label id="rlabel">Check yes for RSVP!</label>
+<label id="gname">Name of Guest</label>
+<select name="selectName" id="selectName">
+  <option name=selectname">Please select name from list...</option>  
 <option name="Mark Jansen">Mark Jansen</option>
 <option name="Joanne Jansen">Joanne Jansen</option>
 <option name="Jean Rearick">Jean Rearick</option>
@@ -54,8 +56,11 @@
 <option name="Katie Wells">Katie Wells</option>
 <option name="Max Wells">Max Wells</option>
 <option name="Brianna Davidson">Brianna Davidson</option>
-<option name="Demetri Kouzas">Demetri Kouzas</option>    
-</select>
+<option name="Demetri Kouzas">Demetri Kouzas</option> 
+</select>   
+ <label id="addGuests">Bringing Family or Children?</label><input type="checkbox" name="additional" id="additional">
+ <label id="numAdd">How many?</label><input type="number" id="numAdd">
+
 
 
 
