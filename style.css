@@ -62,12 +62,34 @@ table {
     background-blend-mode: screen;
     background-size: cover;
     background-position: center;
-    background-color: rgba(41, 40, 40, 0.363);
+   
     color:white;
     background-repeat: no-repeat;
 
 }
 
+.firstContent .cmenu{
+position: absolute;
+top: 75%;
+left:620px;
+
+color: black;
+}
+
+
+.ctxt{
+    background:url(imgs/firstBanner.jpg);
+    height:78px;
+    width: 60%;
+    text-align: center;
+    color: black;
+    font-family: cursive;
+    font-size: 36px;
+   padding-top:30px;
+   border-radius: 5px;
+   margin-left: 18%;
+   box-shadow: 3px 5px rgba(39, 38, 38, 0.336);
+}
 
 
 .c2, .c3, .c4, .c5{
