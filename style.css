@@ -25,7 +25,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    width: 100%;
+    height: 100vh;
+    
 }
 ol, ul {
 	list-style: none;
@@ -48,8 +51,8 @@ table {
     font-size: 6rem;
     font-family: 'Dancing Script', cursive;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 20%;
+    /* margin-top: 20px; */
+    /* margin-left: 20%; */
     text-shadow: black 3px 10px;
     width: 50%;
 }
@@ -57,7 +60,10 @@ table {
 
 .firstContent{
     height: 100vh;
-    border:1px solid red;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-image: url(imgs/bridalBG.jpg);
     background-blend-mode: screen;
     background-size: cover;
@@ -71,27 +77,37 @@ table {
 .firstContent .cmenu{
 position: absolute;
 top: 75%;
-left:620px;
+left:40%;
+font-family: 'Dancing Script', cursive;
+font-size: 2rem;
 
-color: black;
+
+
 }
 
+.firstContent .cmenu a li{
+    margin-top: 4px;
+    
+}
 
-.ctxt{
-    background:url(imgs/firstBanner.jpg);
-    height:78px;
-    width: 60%;
-    text-align: center;
+.firstContent .cmenu a{
+    text-decoration: none;
     color: black;
-    font-family: cursive;
-    font-size: 36px;
-   padding-top:30px;
-   border-radius: 5px;
-   margin-left: 18%;
-   box-shadow: 3px 5px rgba(39, 38, 38, 0.336);
 }
 
 
-.c2, .c3, .c4, .c5{
+
+
+
+
+
+#c2, #c3, #c4, #c5{
     height: 100vh;
+}
+
+
+
+#rsvpForm{
+    display: inline-block;
+    background-color: rgba(144, 144, 241, 0.753);
 }
