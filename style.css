@@ -77,7 +77,7 @@ table {
 
 .firstContent .cmenu{
 position: absolute;
-top: 75%;
+top: 70%;
 left:40%;
 font-family: 'Dancing Script', cursive;
 font-size: 2rem;
@@ -89,6 +89,11 @@ font-size: 2rem;
 .firstContent .cmenu a li{
     margin-top: 4px;
     
+}
+
+.firstContent .cmenu a:hover{
+    color: gray;
+
 }
 
 .firstContent .cmenu a{
@@ -121,6 +126,10 @@ font-size: 2rem;
     padding:5px;
     line-height: 40px;
     
+}
+
+#email{
+    display:none;
 }
 
 #rlabel, #selectName, #gname,#addGuest, #numAdd{
