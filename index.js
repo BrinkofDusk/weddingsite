@@ -9,12 +9,13 @@ epck.addEventListener("change", function() {
         console.log("Paper is selected");
     }
 
-    if(epck.options.selectedIndex === 0){
+    if(epck.options.selectedIndex === 1){
        let eo = document.getElementById("email");
        eo.style.display = "inline-block";
        
-    } else {
-        
+    } else if( epck.options.selectedIndex === 2){
+        let eo = document.getElementById("email");
+        eo.style.display = "none";
     }
 
 
