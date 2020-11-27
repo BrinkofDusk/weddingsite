@@ -121,11 +121,45 @@ font-size: 2rem;
     background-size:cover;
     width: 100;
     font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serifs;
+    font-family: 'Indie Flower', cursive;
     color:black;
     padding:5px;
     line-height: 40px;
     
+}
+
+.ns select{
+display:none;
+
+
+}
+
+select-selected{
+    background-color: rgb(99, 99, 218);
+}
+
+select-selected:after{
+    content: "";
+    border: 6px soild transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+select-selected.select-arrow:after{
+    border-color: transparent transparent #fff transparent;
+}
+
+.select-items div, ,select-selected{
+    cursor:pointer;
+    border:1px solid transparent
+    border-color:transparent transparent rgba(0, 0, 0, 0.1);
+}
+
+.select-items hide{
+    display: none;
+}
+
+.select-items div:hover{
+    background-color: aquamarine;
 }
 
 #email{

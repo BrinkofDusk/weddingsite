@@ -1,5 +1,14 @@
 var epck = document.getElementById("inviteType");
+var x, i, j, l, ll, selEl, a, b, c;
 
+x = document.getElementsByClassName("nf");
+l = x.length;
+for(i = 0; i < l, i++){
+    selEl = x[i].getElementsByTagName("select")[0];
+    ll = selEl.length;
+    a = document.createElement("DIV");
+    a.setAttribute("class", "select-selected")
+}
 
 epck.addEventListener("change", function() { 
 
