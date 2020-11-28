@@ -131,7 +131,11 @@ font-size: 2rem;
 .ns select{
 display:none;
 
+}
 
+.ns {
+    position: relative;
+   
 }
 
 select-selected{
@@ -139,26 +143,42 @@ select-selected{
 }
 
 select-selected:after{
+    position: absolute;
+    top:14px;
+    right:10px;
+    width: 0;
+    height: 0;
     content: "";
     border: 6px soild transparent;
-    border-color: #fff transparent transparent transparent;
+    border-color: rgb(46, 7, 119)fff transparent transparent transparent;
 }
 
 select-selected.select-arrow:after{
-    border-color: transparent transparent #fff transparent;
+    top:7px;
+    border-color: transparent transparent rgb(46, 7, 119) transparent;
 }
 
-.select-items div, ,select-selected{
+.select-items div, .select-selected{
     cursor:pointer;
-    border:1px solid transparent
+    border:1px solid transparent;
     border-color:transparent transparent rgba(0, 0, 0, 0.1);
+    user-select: none;
 }
 
-.select-items hide{
+.select-items{
+    position: absolute;
+    top: 100%;
+    left:0;
+    right:0;
+    z-index: 99;
+    background-color: blue;
+}
+
+.select-hide{
     display: none;
 }
 
-.select-items div:hover{
+.select-items div:hover, .same-as-selected{
     background-color: aquamarine;
 }
 
